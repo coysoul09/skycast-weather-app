@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <radialGradient id="sun2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#FFE566"/>
+      <stop offset="100%" stop-color="#FFAA00"/>
+    </radialGradient>
+    <linearGradient id="cloud-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#D8E8F8" stop-opacity="0.90"/>
+    </linearGradient>
+  </defs>
+  <!-- Sun (behind cloud) -->
+  <g opacity="0.9">
+    <line x1="18" y1="8"  x2="18" y2="14" stroke="#FFD040" stroke-width="2" stroke-linecap="round"/>
+    <line x1="4"  y1="22" x2="10" y2="22" stroke="#FFD040" stroke-width="2" stroke-linecap="round"/>
+    <line x1="8"  y1="12" x2="12" y2="16" stroke="#FFD040" stroke-width="2" stroke-linecap="round"/>
+    <line x1="28" y1="12" x2="24" y2="16" stroke="#FFD040" stroke-width="2" stroke-linecap="round"/>
+    <line x1="8"  y1="32" x2="12" y2="28" stroke="#FFD040" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="18" cy="22" r="9" fill="url(#sun2)"/>
+  </g>
+  <!-- Cloud -->
+  <path d="M52 44 H18 C13.5 44 10 40.5 10 36 C10 31.8 13.1 28.4 17.2 28.1 C17.1 27.4 17 26.7 17 26 C17 20.5 21.5 16 27 16 C30.3 16 33.3 17.7 35.1 20.2 C36.2 19.5 37.5 19 39 19 C43.4 19 47 22.6 47 27 C47 27.3 47 27.7 46.9 28 C49.8 28.8 52 31.4 52 34.5 C52 34.7 52 44 52 44Z"
+        fill="url(#cloud-grad)" stroke="rgba(255,255,255,0.6)" stroke-width="0.5"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="rain-cloud" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#7090A8"/>
+      <stop offset="100%" stop-color="#506070"/>
+    </linearGradient>
+  </defs>
+  <!-- Cloud -->
+  <path d="M50 38 H14 C9 38 5 34 5 29 C5 24.3 8.6 20.5 13.2 20.1 C13.1 19.4 13 18.7 13 18 C13 12.5 17.5 8 23 8 C26.8 8 30.2 10.1 32 13.3 C33.3 12.5 34.8 12 36.5 12 C41.5 12 45.5 16 45.5 21 C45.5 21.4 45.4 21.8 45.3 22.2 C48.2 23.1 50 25.6 50 28.5Z"
+        fill="url(#rain-cloud)"/>
+  <!-- Raindrops -->
+  <path d="M18 45 L16 54" stroke="#60A8D0" stroke-width="2" stroke-linecap="round"/>
+  <path d="M26 43 L24 52" stroke="#60A8D0" stroke-width="2" stroke-linecap="round"/>
+  <path d="M34 45 L32 54" stroke="#60A8D0" stroke-width="2" stroke-linecap="round"/>
+  <path d="M42 43 L40 52" stroke="#60A8D0" stroke-width="2" stroke-linecap="round"/>
+  <path d="M22 54 L20 63" stroke="#60A8D0" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M38 54 L36 63" stroke="#60A8D0" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+</svg>

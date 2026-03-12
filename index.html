@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkyCast — Royal Weather</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="royal-bg">
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+  <div class="bg-orb orb-4"></div>
+  <div class="noise-overlay"></div>
+</div>
+
+<div id="toast-container"></div>
+
+<div class="desktop-shell">
+
+<aside class="sidebar glass-panel">
+
+<div class="brand-block">
+<div class="brand-crown">
+<img src="assets/skycast-logo.jpg" alt="SkyCast Logo" class="brand-logo-img">
+</div>
+
+<div class="brand-text">
+<span class="brand-name">SkyCast</span>
+<span class="brand-tagline">Weather App</span>
+</div>
+</div>
+
+<div class="search-block">
+<div class="search-wrap">
+
+<svg class="s-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+<circle cx="11" cy="11" r="8"></circle>
+<path d="m21 21-4.35-4.35"></path>
+</svg>
+
+<input type="text" id="search-input" class="search-inp" placeholder="Search city..." autocomplete="off">
+
+<button class="s-clear" id="search-clear" style="display:none">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M18 6 6 18M6 6l12 12"></path>
+</svg>
+</button>
+
+</div>
+</div>
+
+<div class="sidebar-actions">
+
+<button class="action-btn" id="geo-btn">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+<path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"></path>
+<circle cx="12" cy="9" r="2.5"></circle>
+</svg>
+<span>My Location</span>
+</button>
+
+<button class="action-btn" id="unit-toggle">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+<path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"></path>
+</svg>
+<span id="unit-label">Switch to °F</span>
+</button>
+
+</div>
+
+<div class="side-divider"></div>
+
+<section class="sidebar-hero" id="hero-card"></section>
+
+<section class="sidebar-sun glass-inset" id="sun-card"></section>
+
+<div class="sidebar-footer">
+<span id="footer-city-time"></span>
+<a href="https://openweathermap.org" target="_blank">OpenWeatherMap</a>
+</div>
+
+</aside>
+
+<main class="main-panel" id="main-content">
+
+<div class="stats-row" id="stat-grid"></div>
+
+<section class="forecast-panel glass-panel">
+
+<div class="panel-header">
+<h2 class="panel-title">
+<span class="ornament">&#10022;</span>
+5-Day Forecast
+<span class="ornament">&#10022;</span>
+</h2>
+</div>
+
+<div class="forecast-grid" id="forecast-list"></div>
+
+</section>
+
+<section class="yesterday-panel glass-panel" id="yesterday-section">
+
+<div class="panel-header">
+
+<div class="yesterday-title-block">
+<h2 class="panel-title">
+<span class="ornament">&#10022;</span>
+Yesterday
+<span class="ornament">&#10022;</span>
+</h2>
+
+<span class="yesterday-date" id="yesterday-date"></span>
+</div>
+
+<button class="royal-toggle" id="yesterday-toggle">
+
+<span>Show Details</span>
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="m6 9 6 6 6-6"></path>
+</svg>
+
+</button>
+
+</div>
+
+<div class="yesterday-content" id="yesterday-content" style="display:none">
+<div class="yesterday-grid" id="yesterday-grid"></div>
+</div>
+
+</section>
+
+</main>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
