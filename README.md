@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ☁️ Aether Weather — Project Structure
 
 ```
@@ -123,3 +124,6 @@ One Call 3.0 pricing: first 1,000 calls/day free, then ~$0.001/call.
 - **`icon-map.js`** — Condition ID → SVG + emoji + CSS theme class.
 - **`config.js`** — Single source for all constants. `Object.freeze()` prevents mutation.
 - **`themes.css`** — Self-contained theme blocks. Zero cascade conflicts with `style.css`.
+=======
+
+>>>>>>> 1b05d53f72825761ecca906fbb99da84a6a2f6f7
